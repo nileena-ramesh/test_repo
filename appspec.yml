@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+- source: ./app1.js
+destination: /home/test_user_1/app1
+- source: ./package.json
+destination: /home/test_user_1/app1
+permissions:
+- object: /home/test_user_1
+owner: ubuntu
+group: ubuntu
+type:
+  - directory
+  - file
